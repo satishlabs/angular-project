@@ -1,0 +1,28 @@
+.myclass{
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin: 5px;
+}
+.bind{
+    text-align: left;
+    margin-left: 15px;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px;
+    float: left;
+    width: 40%;
+    font-size: 20px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

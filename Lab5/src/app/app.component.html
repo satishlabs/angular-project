@@ -1,0 +1,88 @@
+<div class="myclass">
+  <h3>Welcome to Java Learning Center!!!</h3>
+  <h4>You are Learning Angular 7 from Srinivas Dande</h4>
+</div>
+<hr />
+
+  
+  <h3>Using Event Binding</h3>
+  <button (click)="showMessage1()">Click Here</button>
+  <button (click)="showMessage2('Srinivas','sri@cc.com')">Click Here</button>
+  <div>
+ 
+
+  <h3>Using Properties</h3>
+  <table>
+    <tr>
+      <td>CourseName</td>
+      <td>{{cname}}</td>
+    </tr>
+    <tr>
+      <td>Cost</td>
+      <td>{{cost}}</td>
+    </tr>
+    <tr>
+      <td>Trainer Name</td>
+      <td>{{trainer}}</td>
+    </tr>
+    <tr>
+      <td>State Date</td>
+      <td>{{startDate}}</td>
+    </tr>
+    <tr>
+      <td>Is Online Class</td>
+      <td>{{isOnline}}</td>
+    </tr>
+  </table>
+
+
+  <div>
+  <h3>Using Objects</h3>
+  <table>
+    <tr>
+      <td>CourseName</td>
+      <td>{{course.cname}}</td>
+    </tr>
+    <tr>
+      <td>Cost</td>
+      <td>{{course.cost}}</td>
+    </tr>
+    <tr>
+      <td>Trainer Name</td>
+      <td>{{course.trainer}}</td>
+    </tr>
+    <tr>
+      <td>Statd Date</td>
+      <td>{{course.duration}}</td>
+    </tr>
+  </table>
+</div>
+  <hr />
+  <h3>Using Arrays</h3>
+  <ul>
+    <ol *ngFor="let cou of courseNames">
+      {{cou}}
+    </ol>
+  </ul>
+
+  <hr />
+  <h3>Using List</h3>
+  <table>
+    <tr>
+      <th>Course Name</th>
+      <th>Cost</th>
+      <th>Trainer Name</th>
+      <th>Duration</th>
+    </tr>
+    <tr *ngFor="let mycou of mycourses">
+      <td>{{mycou.cname}}</td>
+      <td>{{mycou.cost}}</td>
+      <td>{{mycou.trainer}}</td>
+      <td>{{mycou.duration}}</td>
+      <td>
+        <button (click)="getCoruseInfo(mycou)">View Data</button>
+      </td>
+    </tr>
+  </table>
+
+

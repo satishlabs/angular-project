@@ -1,0 +1,8 @@
+<button (click)="showCourseInfo()">Show Course Details</button>
+<div class="cou-class" *ngIf="showCourse">
+  <p>Course Id: {{CourseData.cid}}</p>
+  <p>Course Name: {{CourseData.cname}}</p>
+  <p>Trainer: {{CourseData.trainer}}</p>
+  <p>Price: {{CourseData.pirce}}</p>
+  <p>Active: {{CourseData.isActive}}</p>
+</div>
