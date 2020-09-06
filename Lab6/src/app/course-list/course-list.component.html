@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="container" style="float: right;">
+    <button class="btn btn-primary mybutton" (click)="showLowpriceCourses()">
+      Show Low Price Courses
+    </button>
+
+    <button class="btn btn-primary mybutton" (click)="showOnlineCourses()">
+      Show Online Courses
+    </button>
+
+    <button class="btn btn-primary mybutton" (click)="showAllCourses()">
+      Show All Courses
+    </button>
+  </div>
+  <div *ngFor="let mycourse of mycoursesToDisplay">
+    <app-course [MyCourse]="mycourse"></app-course>
+  </div>
+</div>

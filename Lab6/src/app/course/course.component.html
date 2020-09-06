@@ -1,0 +1,30 @@
+<div class="card card-body">
+  <h5>
+    {{MyCourse.cname}} Training (Course Code: {{MyCourse.cid}})
+    <button (click)="showCourseInfo()" class="btn btn-primary" style="float: right;">
+    More Info
+    </button>
+  </h5>
+  <table *ngIf="showCourse" class="table table-striped table-light table-bordered">
+    <tr>
+      <td>
+        <h6>Trainer: {{MyCourse.trianer}}</h6>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h6>Price: {{MyCourse.price}}</h6>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h6>Duration: {{MyCourse.duration}}</h6>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h6>Active: {{MyCourse.isOnline}}</h6>
+      </td>
+    </tr>
+  </table>
+</div>
